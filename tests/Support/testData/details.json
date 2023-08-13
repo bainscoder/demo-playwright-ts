@@ -1,0 +1,15 @@
+{
+    "fullName": "Test QA",
+    "email": "Test@clanap.com",
+    "phone": "8765675434",
+    "DOB": "2001-12-01",
+    "country": "USA",
+    "city": "London",
+    "zipCode": "123456",
+    "errorMessage" : {
+        "fullName": "Please enter your full name",
+        "email": "Please enter a valid email address",
+        "phone": "Please enter a valid phone number",
+        "zipCode": "Please enter your zip code"
+    }
+}

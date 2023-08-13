@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter User Details</title>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Enter User Details</h1>
+    <form id="userDetailsForm">
+      <div class="form-group">
+        <label for="fullName">Full Name*:</label>
+        <input type="text" id="fullName" required>
+        <span class="error-message" id="fullNameError">Please enter your full name</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" required>
+        <span class="error-message" id="emailError">Please enter a valid email address</span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone*:</label>
+        <input type="tel" id="phone" required>
+        <span class="error-message" id="phoneError">Please enter a valid phone number</span>
+      </div>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" required>
+        <span class="error-message" id="dateOfBirthError">Please enter your date of birth</span>
+      </div>
+      <div class="form-group">
+        <label>Sex:</label>
+        <label><input type="radio" name="sex" value="male" required> Male</label>
+        <label><input type="radio" name="sex" value="female" required> Female</label>
+        <label><input type="radio" name="sex" value="other" required> Other</label>
+        <span class="error-message" id="sexError">Please select your sex</span>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <!-- Add more countries here -->
+        </select>
+        <span class="error-message" id="countryError">Please select your country</span>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" required>
+        <span class="error-message" id="cityError">Please enter your city</span>
+      </div>
+      <div class="form-group">
+        <label for="zipCode">Zip Code*:</label>
+        <input type="text" id="zipCode" required>
+        <span class="error-message" id="zipCodeError">Please enter your zip code</span>
+      </div>
+      <div class="form-group">
+        <label for="profileImage">Profile Image:</label>
+        <input type="file" id="profileImage" accept="image/*" required>
+        <span class="error-message" id="profileImageError">Please upload a profile image</span>
+      </div>
+      <div class="form-group">
+        <label for="confirmCheckbox"></label>
+        <input type="checkbox" id="confirmCheckbox" required>
+        <label class="checkbox-label" for="confirmCheckbox">I confirm the details provided are correct*.</label>
+        <span class="error-message" id="confirmCheckboxError">Please check the confirmation box</span>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit-details">Payment Page</button>
+      </div>
+    </form>
+  </div>
+  <script src="details.js"></script>
+</body>
+</html>

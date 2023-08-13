@@ -1,0 +1,83 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/login.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Center the login container vertically and horizontally */
+.login-container {
+  text-align: center;
+  border: 1.5px solid #ccc;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 500px; /* Increase this value based on your design */
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the input fields and button */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button full-width */
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #51a3ff;
+}
+
+/* Media Queries */
+/* For mobile devices with screen size up to 767px */
+@media (max-width: 767px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    position: relative;
+    padding: 20px;
+    top: 0; /* Reset the top value for mobile view */
+    left: 0; /* Reset the left value for mobile view */
+    transform: none; /* Reset the transform for mobile view */
+  }
+}
+
+/* For larger devices such as tablets and desktops */
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    padding: 40px;
+  }
+}

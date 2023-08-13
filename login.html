@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class="login-container">
+    <h1 style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome</h1>
+    <p style="color: powderblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px;">
+    Lets begins your journey with branded products.</p>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()" id = "login">Login</button>
+    <button onclick="cancel()" id = "cancel">Cancel</button>
+    <div id="error" style="color: red; display: none; font-size: 12px; font-weight: 100; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

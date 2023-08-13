@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(195, 225, 220, 0.3); 
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1.px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(195, 225, 220, 0.4); /* Add a semi-transparent white background for better readability */
+}
+
+h1, p {
+  text-align: center;
+}
+
+#paymentForm label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Add this CSS to the existing styles */
+#paymentForm input[type="text"],
+#paymentForm input[type="number"],
+#paymentForm input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#paymentForm input[type="text"]:focus,
+#paymentForm input[type="number"]:focus,
+#paymentForm input[type="tel"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#paymentForm button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#paymentForm button:hover {
+  background-color: #45a049;
+}
+
+
+#paymentForm button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}

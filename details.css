@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: dimgray;
+    background-color: rgba(195, 225, 220, 0.3); 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1.px solid #ccc;
+    border-radius: 5px;
+    background-color:  rgba(195, 225, 220, 0.6); 
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .checkbox-label {
+    display: inline;
+    margin-left: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  /* Add this CSS for error message styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.error {
+  border-color: red;
+}
+
+/* Rest of your existing CSS styles go here */
